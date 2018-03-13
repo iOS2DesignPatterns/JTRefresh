@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A964040920576FF600E95598 /* JTRefreshRootTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964040820576FF600E95598 /* JTRefreshRootTableController.swift */; };
+		A964040B2057733100E95598 /* JTScrollRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964040A2057733100E95598 /* JTScrollRefreshController.swift */; };
+		A964040D2057734600E95598 /* JTTableRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964040C2057734600E95598 /* JTTableRefreshController.swift */; };
+		A964040F2057735900E95598 /* JTCollectionRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964040E2057735900E95598 /* JTCollectionRefreshController.swift */; };
+		A96404112057736B00E95598 /* JTWebRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96404102057736B00E95598 /* JTWebRefreshController.swift */; };
+		A9640413205773FA00E95598 /* JTBaseRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9640412205773FA00E95598 /* JTBaseRefreshViewController.swift */; };
+		A964041620579DE600E95598 /* JTRefreshDIYHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A964041520579DE600E95598 /* JTRefreshDIYHeaderView.swift */; };
+		A96404182057A50F00E95598 /* JTRefreshDIYFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96404172057A50F00E95598 /* JTRefreshDIYFooterView.swift */; };
+		A964041B2057B45000E95598 /* JTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96404192057B45000E95598 /* JTCollectionViewCell.swift */; };
+		A964041C2057B45000E95598 /* JTCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A964041A2057B45000E95598 /* JTCollectionViewCell.xib */; };
+		A9C9BC362054D22400045E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9BC352054D22400045E3A /* AppDelegate.swift */; };
+		A9C9BC3B2054D22400045E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C9BC392054D22400045E3A /* Main.storyboard */; };
+		A9C9BC3D2054D22400045E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C9BC3C2054D22400045E3A /* Assets.xcassets */; };
+		A9C9BC402054D22400045E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C9BC3E2054D22400045E3A /* LaunchScreen.storyboard */; };
+		A9C9BC4E2054D24D00045E3A /* JTRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A9C9BC482054D24D00045E3A /* JTRefresh.bundle */; };
+		A9C9BC4F2054D24D00045E3A /* JTRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9BC492054D24D00045E3A /* JTRefresh.swift */; };
+		A9C9BC502054D24D00045E3A /* JTRefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9BC4A2054D24D00045E3A /* JTRefreshBaseView.swift */; };
+		A9C9BC512054D24D00045E3A /* JTRefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9BC4B2054D24D00045E3A /* JTRefreshExtension.swift */; };
+		A9C9BC522054D24D00045E3A /* JTRefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9BC4C2054D24D00045E3A /* JTRefreshFooterView.swift */; };
+		A9C9BC532054D24D00045E3A /* JTRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9BC4D2054D24D00045E3A /* JTRefreshHeaderView.swift */; };
+		A9C9BC572054D3BC00045E3A /* JTBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9BC562054D3BC00045E3A /* JTBaseCell.swift */; };
+		A9C9BC5D2054DBEE00045E3A /* JTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9BC5C2054DBED00045E3A /* JTExtension.swift */; };
+		A9C9BC5F205512C800045E3A /* JTRefreshProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9BC5E205512C800045E3A /* JTRefreshProtocol.swift */; };
+		A9C9BC61205581B700045E3A /* JTRefreshGIFHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9BC60205581B700045E3A /* JTRefreshGIFHeaderView.swift */; };
+		A9C9BC632055821500045E3A /* JTRefreshGIFFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9BC622055821500045E3A /* JTRefreshGIFFooterView.swift */; };
+		A9C9BC65205584A500045E3A /* JTRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9BC64205584A500045E3A /* JTRefreshHeader.swift */; };
+		A9C9BC67205584B900045E3A /* JTRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9BC66205584B900045E3A /* JTRefreshFooter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A964040820576FF600E95598 /* JTRefreshRootTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTRefreshRootTableController.swift; sourceTree = "<group>"; };
+		A964040A2057733100E95598 /* JTScrollRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTScrollRefreshController.swift; sourceTree = "<group>"; };
+		A964040C2057734600E95598 /* JTTableRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTTableRefreshController.swift; sourceTree = "<group>"; };
+		A964040E2057735900E95598 /* JTCollectionRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTCollectionRefreshController.swift; sourceTree = "<group>"; };
+		A96404102057736B00E95598 /* JTWebRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTWebRefreshController.swift; sourceTree = "<group>"; };
+		A9640412205773FA00E95598 /* JTBaseRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTBaseRefreshViewController.swift; sourceTree = "<group>"; };
+		A964041520579DE600E95598 /* JTRefreshDIYHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTRefreshDIYHeaderView.swift; sourceTree = "<group>"; };
+		A96404172057A50F00E95598 /* JTRefreshDIYFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTRefreshDIYFooterView.swift; sourceTree = "<group>"; };
+		A96404192057B45000E95598 /* JTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTCollectionViewCell.swift; sourceTree = "<group>"; };
+		A964041A2057B45000E95598 /* JTCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JTCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9C9BC322054D22400045E3A /* JTRefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTRefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C9BC352054D22400045E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9C9BC3A2054D22400045E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9C9BC3C2054D22400045E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9C9BC3F2054D22400045E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9C9BC412054D22400045E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9C9BC482054D24D00045E3A /* JTRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JTRefresh.bundle; sourceTree = "<group>"; };
+		A9C9BC492054D24D00045E3A /* JTRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTRefresh.swift; sourceTree = "<group>"; };
+		A9C9BC4A2054D24D00045E3A /* JTRefreshBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTRefreshBaseView.swift; sourceTree = "<group>"; };
+		A9C9BC4B2054D24D00045E3A /* JTRefreshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTRefreshExtension.swift; sourceTree = "<group>"; };
+		A9C9BC4C2054D24D00045E3A /* JTRefreshFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTRefreshFooterView.swift; sourceTree = "<group>"; };
+		A9C9BC4D2054D24D00045E3A /* JTRefreshHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTRefreshHeaderView.swift; sourceTree = "<group>"; };
+		A9C9BC562054D3BC00045E3A /* JTBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTBaseCell.swift; sourceTree = "<group>"; };
+		A9C9BC5C2054DBED00045E3A /* JTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTExtension.swift; sourceTree = "<group>"; };
+		A9C9BC5E205512C800045E3A /* JTRefreshProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTRefreshProtocol.swift; sourceTree = "<group>"; };
+		A9C9BC60205581B700045E3A /* JTRefreshGIFHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTRefreshGIFHeaderView.swift; sourceTree = "<group>"; };
+		A9C9BC622055821500045E3A /* JTRefreshGIFFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTRefreshGIFFooterView.swift; sourceTree = "<group>"; };
+		A9C9BC64205584A500045E3A /* JTRefreshHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTRefreshHeader.swift; sourceTree = "<group>"; };
+		A9C9BC66205584B900045E3A /* JTRefreshFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTRefreshFooter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9C9BC2F2054D22400045E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A964040720576F4300E95598 /* JTRefreshExample */ = {
+			isa = PBXGroup;
+			children = (
+				A964040820576FF600E95598 /* JTRefreshRootTableController.swift */,
+				A9640412205773FA00E95598 /* JTBaseRefreshViewController.swift */,
+				A964040A2057733100E95598 /* JTScrollRefreshController.swift */,
+				A964040C2057734600E95598 /* JTTableRefreshController.swift */,
+				A964040E2057735900E95598 /* JTCollectionRefreshController.swift */,
+				A96404102057736B00E95598 /* JTWebRefreshController.swift */,
+				A964041D2057C44400E95598 /* Cells */,
+				A964041420579DA900E95598 /* JTRefreshDIY */,
+			);
+			path = JTRefreshExample;
+			sourceTree = "<group>";
+		};
+		A964041420579DA900E95598 /* JTRefreshDIY */ = {
+			isa = PBXGroup;
+			children = (
+				A964041520579DE600E95598 /* JTRefreshDIYHeaderView.swift */,
+				A96404172057A50F00E95598 /* JTRefreshDIYFooterView.swift */,
+			);
+			path = JTRefreshDIY;
+			sourceTree = "<group>";
+		};
+		A964041D2057C44400E95598 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A9C9BC562054D3BC00045E3A /* JTBaseCell.swift */,
+				A96404192057B45000E95598 /* JTCollectionViewCell.swift */,
+				A964041A2057B45000E95598 /* JTCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A9C9BC292054D22400045E3A = {
+			isa = PBXGroup;
+			children = (
+				A9C9BC342054D22400045E3A /* JTRefreshDemo */,
+				A9C9BC332054D22400045E3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9C9BC332054D22400045E3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9C9BC322054D22400045E3A /* JTRefreshDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9C9BC342054D22400045E3A /* JTRefreshDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A964040720576F4300E95598 /* JTRefreshExample */,
+				A9C9BC472054D24D00045E3A /* JTRefresh */,
+				A9C9BC352054D22400045E3A /* AppDelegate.swift */,
+				A9C9BC392054D22400045E3A /* Main.storyboard */,
+				A9C9BC3C2054D22400045E3A /* Assets.xcassets */,
+				A9C9BC3E2054D22400045E3A /* LaunchScreen.storyboard */,
+				A9C9BC412054D22400045E3A /* Info.plist */,
+			);
+			path = JTRefreshDemo;
+			sourceTree = "<group>";
+		};
+		A9C9BC472054D24D00045E3A /* JTRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				A9C9BC482054D24D00045E3A /* JTRefresh.bundle */,
+				A9C9BC5C2054DBED00045E3A /* JTExtension.swift */,
+				A9C9BC492054D24D00045E3A /* JTRefresh.swift */,
+				A9C9BC5E205512C800045E3A /* JTRefreshProtocol.swift */,
+				A9C9BC4B2054D24D00045E3A /* JTRefreshExtension.swift */,
+				A9C9BC4A2054D24D00045E3A /* JTRefreshBaseView.swift */,
+				A9C9BC64205584A500045E3A /* JTRefreshHeader.swift */,
+				A9C9BC66205584B900045E3A /* JTRefreshFooter.swift */,
+				A9C9BC4D2054D24D00045E3A /* JTRefreshHeaderView.swift */,
+				A9C9BC4C2054D24D00045E3A /* JTRefreshFooterView.swift */,
+				A9C9BC60205581B700045E3A /* JTRefreshGIFHeaderView.swift */,
+				A9C9BC622055821500045E3A /* JTRefreshGIFFooterView.swift */,
+			);
+			path = JTRefresh;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9C9BC312054D22400045E3A /* JTRefreshDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9C9BC442054D22400045E3A /* Build configuration list for PBXNativeTarget "JTRefreshDemo" */;
+			buildPhases = (
+				A9C9BC2E2054D22400045E3A /* Sources */,
+				A9C9BC2F2054D22400045E3A /* Frameworks */,
+				A9C9BC302054D22400045E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTRefreshDemo;
+			productName = JTRefreshDemo;
+			productReference = A9C9BC322054D22400045E3A /* JTRefreshDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9C9BC2A2054D22400045E3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = jintao;
+				TargetAttributes = {
+					A9C9BC312054D22400045E3A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A9C9BC2D2054D22400045E3A /* Build configuration list for PBXProject "JTRefreshDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9C9BC292054D22400045E3A;
+			productRefGroup = A9C9BC332054D22400045E3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9C9BC312054D22400045E3A /* JTRefreshDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9C9BC302054D22400045E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C9BC402054D22400045E3A /* LaunchScreen.storyboard in Resources */,
+				A9C9BC4E2054D24D00045E3A /* JTRefresh.bundle in Resources */,
+				A9C9BC3D2054D22400045E3A /* Assets.xcassets in Resources */,
+				A964041C2057B45000E95598 /* JTCollectionViewCell.xib in Resources */,
+				A9C9BC3B2054D22400045E3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9C9BC2E2054D22400045E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C9BC67205584B900045E3A /* JTRefreshFooter.swift in Sources */,
+				A964040920576FF600E95598 /* JTRefreshRootTableController.swift in Sources */,
+				A964040D2057734600E95598 /* JTTableRefreshController.swift in Sources */,
+				A9C9BC502054D24D00045E3A /* JTRefreshBaseView.swift in Sources */,
+				A964041B2057B45000E95598 /* JTCollectionViewCell.swift in Sources */,
+				A9C9BC362054D22400045E3A /* AppDelegate.swift in Sources */,
+				A9C9BC532054D24D00045E3A /* JTRefreshHeaderView.swift in Sources */,
+				A9C9BC522054D24D00045E3A /* JTRefreshFooterView.swift in Sources */,
+				A9C9BC572054D3BC00045E3A /* JTBaseCell.swift in Sources */,
+				A9C9BC61205581B700045E3A /* JTRefreshGIFHeaderView.swift in Sources */,
+				A9C9BC5F205512C800045E3A /* JTRefreshProtocol.swift in Sources */,
+				A9C9BC512054D24D00045E3A /* JTRefreshExtension.swift in Sources */,
+				A9640413205773FA00E95598 /* JTBaseRefreshViewController.swift in Sources */,
+				A96404182057A50F00E95598 /* JTRefreshDIYFooterView.swift in Sources */,
+				A9C9BC632055821500045E3A /* JTRefreshGIFFooterView.swift in Sources */,
+				A9C9BC4F2054D24D00045E3A /* JTRefresh.swift in Sources */,
+				A964040F2057735900E95598 /* JTCollectionRefreshController.swift in Sources */,
+				A964040B2057733100E95598 /* JTScrollRefreshController.swift in Sources */,
+				A9C9BC65205584A500045E3A /* JTRefreshHeader.swift in Sources */,
+				A96404112057736B00E95598 /* JTWebRefreshController.swift in Sources */,
+				A964041620579DE600E95598 /* JTRefreshDIYHeaderView.swift in Sources */,
+				A9C9BC5D2054DBEE00045E3A /* JTExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9C9BC392054D22400045E3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9C9BC3A2054D22400045E3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9C9BC3E2054D22400045E3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9C9BC3F2054D22400045E3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9C9BC422054D22400045E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9C9BC432054D22400045E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9C9BC452054D22400045E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HX9UN9S6G;
+				INFOPLIST_FILE = JTRefreshDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jin.JTRefreshDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9C9BC462054D22400045E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HX9UN9S6G;
+				INFOPLIST_FILE = JTRefreshDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jin.JTRefreshDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9C9BC2D2054D22400045E3A /* Build configuration list for PBXProject "JTRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C9BC422054D22400045E3A /* Debug */,
+				A9C9BC432054D22400045E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9C9BC442054D22400045E3A /* Build configuration list for PBXNativeTarget "JTRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C9BC452054D22400045E3A /* Debug */,
+				A9C9BC462054D22400045E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9C9BC2A2054D22400045E3A /* Project object */;
+}
