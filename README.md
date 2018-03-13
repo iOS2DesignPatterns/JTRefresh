@@ -18,6 +18,9 @@ UIScrollView, UITableView, UICollectionView, UIWebView
 addRefreshWithTarget(_ target: AnyObject, headerAction: Selector?, footerAction: nil)
 // 显示最后刷新时间
 addRefreshWithTarget(_ target: AnyObject, headerAction: Selector?, footerAction: nil, hiddenRefreshDate: false)
+// (Optional)设置刷新视图高度(不设置有默认值)
+scrollView.headerView?.refresh_height = 60
+scrollView.footerView?.refresh_height = 40
 ```
 - *只添加上拉刷新*
 ```swift
@@ -39,6 +42,7 @@ let header = JTRefreshHeaderView(hiddenRefreshDate: false, { [weak self] in
      // 2. 调用scrollView.headerStopRefresh()停止下拉刷新方法，也要弱引用
 })
 /// 设置属性
+header.refresh_heigth = 50  (Optional 不设置有默认值)
 header.refreshStatusLabel?.textColor = UIColor.red
 header.refreshStatusLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
 // func setStatusText(_ text: String, for state: JTRefresh.headerStatus)
@@ -62,6 +66,7 @@ let footer = JTRefreshFooterView({ [weak self] in
      // 2. 调用scrollView.footerStopRefresh()停止上拉刷新方法，也要弱引用
 })
 /// 设置属性
+footer.refresh_height = 40   // (Optional, 不设置有默认值)
 footer.refreshStatusLabel?.textColor = UIColor.red
 footer.refreshStatusLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
 // func setStatusText(_ text: String, for state: JTRefresh.footerStatus)   
