@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JTCollectionViewCell" customModule="JTRefreshDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="106" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="62ab09f41bd5ad6ec12a531f83cb39dbb4fd3ca7" translatesAutoresizingMaskIntoConstraints="NO" id="Sil-Js-USx">
+                        <rect key="frame" x="0.0" y="0.0" width="106" height="90"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Sil-Js-USx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="56D-pK-Bdv"/>
+                <constraint firstAttribute="bottom" secondItem="Sil-Js-USx" secondAttribute="bottom" id="IhN-ea-45t"/>
+                <constraint firstAttribute="trailing" secondItem="Sil-Js-USx" secondAttribute="trailing" id="OQM-iZ-Fqg"/>
+                <constraint firstItem="Sil-Js-USx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XpU-Iw-6iL"/>
+            </constraints>
+            <size key="customSize" width="106" height="90"/>
+            <point key="canvasLocation" x="62" y="74"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="62ab09f41bd5ad6ec12a531f83cb39dbb4fd3ca7" width="900" height="506"/>
+    </resources>
+</document>
