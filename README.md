@@ -1,14 +1,17 @@
-# JTRefresh      
+# JTRefresh(Swift)
 
 ## Install(安装)
 目前还没弄到pod上去，直接将项目的JTRefresh文件拖到项目中吧~    
 
-## 适用场景
+## 适用视图
 UIScrollView, UITableView, UICollectionView, UIWebView
 
 ## Use(使用)
-### Normal(正常使用)
-#### 直接使用(UIScrollView，UITableView, UICollectionView调用)
+1. 设置控件高度，设置控件的refresh_height属性（上拉以及下拉都是这个属性）
+2. 结束刷新，调用适用视图(UIScrollView等)的headerStopRefresh或者footerStopRefresh方法   
+
+### Use-Normal(正常使用)
+##### 直接使用(UIScrollView，UITableView, UICollectionView调用)
 - *只添加下拉刷新*
 ```swift
 // 默认隐藏最后刷新时间
@@ -24,7 +27,7 @@ addRefreshWithTarget(_ target: AnyObject, headerAction: nil, footerAction: Selec
 ```swift
 addRefreshWithTarget(_ target: AnyObject, headerAction: Selector?, footerAction: Selector?, hiddenRefreshDate: Bool = true)
 ```
-#### 设置属性
+##### 设置属性使用
 - *添加下拉刷新*
 ```swift
 /// 初始化
@@ -73,7 +76,7 @@ collectionView.footerView = footer
 webView.scrollView.footerView = footer
 ```    
 
-### GIF(添加动画)
+### Use-GIF(动画使用)
 - *添加下拉刷新*
 ```swift
 /// 初始化 
@@ -129,9 +132,42 @@ collectionView.footerView = gifFooter
 webView.scrollView.footerView = gifFooter
 ```   
 
-### DIY(自定义视图)
+### Use-DIY(自定义使用)
+- **header**
+1. 继承于JTRefreshHeader
+2. 采用layout自动布局或者autoresizingMask布局 (控制器自定义使用时不需要传入视图frame)
+3. 改变视图高度，只要设置属性refresh_height就ok了。
+4. 在以下方法中设置你的DIY视图动画，执行方法等。。。
+```swift
+/// *正常状态(下拉中)，progress为下拉进度
+override func headerDroping(_ progrss: CGFloat)
+/// *即将刷新
+override func headerReadyRefresh()
+/// *开始刷新，刷新中 （刷新中，不会从复调用该方法）
+override func headerRefreshing()
+/// *结束刷新
+override func headerStopRefresh()
+```   
+
+- **footer**
+1. 继承于JTRefreshFooter
+2. 采用layout自动布局或者autoresizingMask布局 (控制器自定义使用时不需要传入视图frame)
+3. 改变视图高度，只要设置属性refresh_height就ok了
+4. 在以下方法中设置你的DIY视图动画，执行方法等。。。
+```swift
+/// *正常状态(上拉中), progrss为上拉进度
+override func footerPulling(_ progrss: CGFloat)
+/// *准备加载状态(释放开启加载)
+override func footerReadyLoad()
+/// *开始，加载中 (不会从复调用该方法)
+override func footerLoading()
+/// *结束加载
+override func footerStopLoad()
+```
 
 ### Note(使用注意)
+1. 在使用提供的JTRefreshHeaderView，JTRefreshFooterView，JTRefreshGIFHeaderView, JTRefreshGIFFooterView初始化过程中，使用Closures(闭包，blocks)初始化时，如果在闭包中使用自己，或者调用该视图父类的JTRefreshProtocol方法时，请使用弱引用(具体看例子)
+2. 在UICollectionView添加header或者footer时，请设置collectionView.alwaysBounceVertical = true，或collectionView.alwaysBounceHorizontal=true, 因为这个默认是关闭的，当视图内容小于高度时，滑不动喔
 
+###### 因为我也是刚封装没多久，里面可能有许多不足，如果大家使用中发现bug的话，希望能留言，在此谢谢各路'牛鬼蛇神'了😜
 
-## Effect(效果)
