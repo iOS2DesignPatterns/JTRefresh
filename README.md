@@ -140,7 +140,7 @@ webView.scrollView.footerView = gifFooter
 ### Use-DIY(自定义使用)
 - **header**
 1. 继承于JTRefreshHeader
-2. 采用layout自动布局或者autoresizingMask布局 (控制器自定义使用时不需要传入视图frame)
+2. 推荐采用layout自动布局或者autoresizingMask布局 (控制器使用自定义控件时不需要传入视图frame)
 3. 改变视图高度，只要设置属性refresh_height就ok了。
 4. 在以下方法中设置你的DIY视图动画，执行方法等。。。
 ```swift
@@ -156,7 +156,7 @@ override func headerStopRefresh()
 
 - **footer**
 1. 继承于JTRefreshFooter
-2. 采用layout自动布局或者autoresizingMask布局 (控制器自定义使用时不需要传入视图frame)
+2. 推荐采用layout自动布局或者autoresizingMask布局 (控制器使用自定义控件时不需要传入控件frame)
 3. 改变视图高度，只要设置属性refresh_height就ok了
 4. 在以下方法中设置你的DIY视图动画，执行方法等。。。
 ```swift
