@@ -7,7 +7,7 @@
 UIScrollView, UITableView, UICollectionView, UIWebView
 
 ## Use(使用)
-1. 设置控件高度，设置控件的refresh_height属性（上拉以及下拉都是这个属性）
+1. 设置控件高度，设置控件或者适用视图(UIScrollView等)的headerView/footerView的refresh_height属性（上拉以及下拉都是这个属性）
 2. 结束刷新，调用适用视图(UIScrollView等)的headerStopRefresh或者footerStopRefresh方法   
 
 ### Use-Normal(正常使用)
